@@ -1,0 +1,49 @@
+body{
+  color: lightgoldenrodyellow;
+  background-color: #2364aa; 
+}
+.board{
+  background-color: #3da5d9;
+  transition: all 0.3s ease;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.player{
+  background-color: #73BFB8;
+  height: 244px;
+}
+.opponet{
+  background-color: #73BFB8;
+  height: 244px;
+}
+.controller{
+  background-color: #3da5d9;
+}
+.hand{
+  font-size: 55px;
+
+  transition: all 0.3s ease;
+}
+#result{
+  font-weight: bold;
+  color: white;
+  display: none;
+  width: 500px;
+  font-size: 20px;
+  padding: 7px 7px 7px 7px;
+
+  transition: all 0.3s ease;
+}
+#rock-sec, #paper-sec{
+  margin-left: 100px;
+  transform: rotate(-180deg);
+}
+#scissors-sec{
+  transform: rotate(-90deg);
+}
+#rock-first, #paper-first{
+  margin-right: 100px;
+}
+#scissors-first{
+  transform: rotate(90deg);
+}

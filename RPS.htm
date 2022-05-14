@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="RPS.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+  <title>Rock Paper Scissors</title>
+</head>
+<body id="body">
+  
+  <section class="container jumbotron board text-center">
+    <h1>Rock Paper Scissors</h1>
+
+    <p class="text-center" style='font-size:30px '>PC</p>
+    <div class="opponet container jumbotron text-center">
+      <p id="opponet-hand">
+        <i id="scissors-sec" class='far fa-hand-scissors hand' ></i>
+        <i id="paper-sec" class='far fa-hand-paper hand' ></i>
+        <i id="rock-sec" class='far fa-hand-rock-o hand' ></i>
+      </p>
+
+    </div>
+
+    <p class="text-center" style='font-size:30px '>YOU</p>
+    <div class="player container jumbotron text-center">
+      <p id="player-hand" >
+        <i id="rock-first" class='far fa-hand-rock-o hand' ></i>
+        <i id="paper-first" class='far fa-hand-paper hand' ></i>
+        <i id="scissors-first" class='far fa-hand-scissors hand' ></i>
+      </p>
+    </div>
+
+    <p id="result"></p>
+    <div class="btn-group">
+      <button onclick="playerChoice(0)" class="btn btn-primary btn-lg">Rock</button>
+      <button onclick="playerChoice(1)" class="btn btn-primary btn-lg">Paper</button>
+      <button onclick="playerChoice(2)" class="btn btn-primary btn-lg">Scissors</button>
+    </div>
+  </section>
+
+  <script src="RPS.js"></script>
+</body>
+</html>
